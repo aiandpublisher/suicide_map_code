@@ -1,0 +1,157 @@
+/* CSS Main style */
+	
+	body{
+		background-color:#696969;
+		font-family: "Times New Roman",Georgia,Serif;
+		height:100%;
+		width:100%;
+		overflow:scroll;
+	}
+/* footer */
+	footer{
+		bottom:3%;
+		position:absolute;
+		color:#f2f0f5;
+		text-align: center;
+		width:100%;
+	}
+
+/* right side bar */
+	#right{
+		float:right;
+		width:22%;
+		margin-right:4%;
+		padding:25px;
+		border:8px #696969;
+		line-height: 150%; 
+		color:#f2f0f5; 
+		background-color:#191919; 
+		height: 465px;
+		overflow:scroll;
+	}
+
+/* left side is the main part */
+	#main {
+		font-size:400%; 
+		height:17%;
+		color:#f2f0f5;
+		text-align:center;
+	}
+
+/* navigation bar and menu */
+	.navmenu {
+		width: 100%;
+		background: #333333;
+		display: inline-block;
+		float:left;
+	}
+
+	#menu {
+		color: #fff;
+		font-size: 18px;
+		position: relative;
+		font-weight: 500;
+		cursor: pointer;
+		padding-left: 10px;
+	}
+
+	#menu a {
+		text-decoration: none
+	}
+
+	nav {
+		display: none
+	}
+
+	nav ul {
+		list-style-type: none;
+		padding-left: 0;
+		font-size: 0;
+		background-color: #303030
+	}
+
+	nav li {
+		display: block;
+		font-size: 16px;
+		color: white;
+	    margin: 0 5px;
+	}
+
+	ul.navbar>li>a {
+		color: #fff
+	}
+
+	nav a {
+		display: block;
+		padding: 10px;
+		text-decoration: none;
+		color: inherit
+	}
+
+/* color legend at the bottom-left */
+	.legend {
+         line-height: 15px;
+         color: #555;
+         font-family: "Times New Roman",Georgia,Serif;
+     }
+
+    .legend i {
+	    width: 10px;
+	    height:10px;
+	    float: left;
+	    margin-left: 8px;
+	    opacity: 0.9;
+	}
+
+/* info box at the top-right */
+	.info {
+	    padding: 6px 8px;
+	    background: #f2f0f5;
+	    opacity: 0.9;
+	    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+	    border-radius: 5px;
+	    text-align:center;
+	    font-family: "Times New Roman",Georgia,Serif;
+	}
+
+	.info h3 {
+	    margin: 0 0 5px;
+	    color: #777;
+	}
+	
+/* texts in popup */
+	.popup{
+		font-family: "Times New Roman",Georgia,Serif;
+		color: #555;
+	}
+	
+/* hyperlinks */
+	a{
+		color:#f2f0f5;
+	}
+	a:hover{
+		color:#97CBFF;
+	}
+
+	a:active{
+		color:#FAF4FF;
+	}
+	p{
+		padding:2px;
+	}
+	
+/* buttoms */
+	.buttom{
+		width:55px;
+		height:30px;
+		text-align:center;
+		background:#78669e;
+		color:#fff;
+		font-size:85%;
+		float:right;
+		padding:0px;
+		font-family: "Times New Roman",Georgia,Serif;
+		margin:15px;
+	}
+
+	

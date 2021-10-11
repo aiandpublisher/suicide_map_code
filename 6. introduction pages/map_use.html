@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Terms of Use</title>
+		<meta charset="UTF-8">
+		<style>
+			#term { 
+				height:515px;
+				width: 62%; 
+				float: left;
+				margin-left:3%;
+				background-color:#191919;
+				padding:5px; 
+				color:#f2f0f5;
+			}
+			h2{
+				color:#d4c9e7;
+				text-align:center;
+			}
+			h3{
+				color:#d4c9e7;
+				padding-left:5px;
+			}
+			.term_content{
+				background-color:#333333;
+				padding:2px;
+				margin:10px;
+				line-height: 180%;
+			}
+
+		</style>
+
+	    <!-- uses a css file for universal page setings for this website-->
+	    <link rel="stylesheet" href="style.css"/>
+
+	</head>
+
+	<body>
+		<header>
+			<h1 id="main">Suicide Mortality in 2019's England</h1>
+	    </header>
+		 <div id="term">
+		 	<h2>Term of Use</h2>
+		 	<!-- content of terms -->
+	 		<h3>Copyright, Reproduction and Media Guidelines</h3>
+	 		<div class="term_content"> 										
+		 		<p>
+		 			You may re-use this information free of charge in any format or medium, under the terms of the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence</a>.
+		 			<br/>
+		 			If you are a journalist, pease consider following the <a href="https://www.samaritans.org/about-samaritans/media-guidelines/">Samaritans' media guidelines</a> for reporting suicide with proper terminology and appropriate methods. 
+		 		</p>
+	 		</div>						
+
+		 	<h3> Interpretation Notes</h3>
+		 	<div class="term_content"> 
+		 		<p>
+		 			We suggest you interpret these data critically. Statistics on suicide are based on the year of death registration – due to death registration delays, around half of the deaths registered in 2019 will have occurred in the previous year [<a href="https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/bulletins/suicidesintheunitedkingdom/2019registrations#glossary">See more</a>].
+		 			<br/>
+		 		</p>
+		 		<p>
+		 			This map never aims to only represent a composition of data. It is extremenly important for our users to understand: behind every number, there is a loss of real life. Suicide is a serious topic and should be interpreted with respect.
+		 		</p>
+		 	</div>
+		 </div>
+        
+
+        <!-- the right side bar -->
+         <div id="right">
+			<section>
+		    <div class="container">
+            <!-- navigation bar -->
+				<div class='navmenu'>
+					<!-- navigation menu -->
+				    <span id='menu'><img src="https://img.icons8.com/material-outlined/32/ffffff/navigation.png" alt="navigation icon"/></span>
+				    <nav id='navbar'>
+					    <ul class='navbar'>
+				            <!-- return to homepage, which contains the map -->
+					        <li><a href='map_England_suicide.php'>Home</a></li>
+					        <!-- introduction to this site, including datasource,
+					             design purpose, contact information, etc.  -->
+					        <li><a href='map_source.html'>Introduction</a></li>
+					        <!-- term of using this map -->
+					        <li><a href='map_use.html'>Term of Use</a></li>
+					        <!-- a simple search box and the search result both in text and map-->
+						    <li><a href='map_search.php'>Search</a></li>
+					    </ul>
+				    </nav>
+				</div>
+				<div style='clear: both;'>
+				</div>
+			</div>
+		    </section>
+		    
+		    <!-- contacts and help information -->
+		    <h3>You are not alone!</h3>
+		    <p>If you are struggling to cope with distress, please call Samaritans Helpline for free on 116-124 or visit <a href="https://www.samaritans.org">samaritans.org</a> for more supports. Samaritan provides 24/7 and confidential services for anyone struggling to cope, whoever they are, however they feel, whatever life has done to them.</p>
+		    <h3>We encourage feedback!</h3>
+		    <p>We welcome any comment or suggestion. If you find anything our website could improve, please email uczcjyu@ucl.ac.uk</p>
+		</div>
+		<!-- end of the right side bar -->
+
+
+
+
+        <!-- footer of the page -->
+        <footer>Data sets provided by <a href="https://www.ons.gov.uk/">Office for National Statistics licensed under the Open Government Licence v.3.0</a>; navigation icon by <a href="https://icons8.com/icon/113343/navigation">Icons8</a>; map implemented by the <a href="https://www.leafletjs.com/">Leaflet Library</a> </footer>
+
+
+        <!-- JS code for the pull-down menu -->
+		<script>
+		    document.getElementById('menu').addEventListener('click', function () {
+		        var nav = document.getElementsByTagName('nav')[0];
+		        if (nav.style.display == 'block') {
+		            nav.style.display = 'none';
+		        } else {
+		            nav.style.display = 'block';
+		        }
+		    }, false);
+				    
+		</script>
+	</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Data Source of the Map</title>
+		<meta charset="UTF-8">
+		<style>
+			#source { 
+				height:515px;
+				width: 62%; 
+				float: left;
+				margin-left:3%;
+				background-color:#191919;
+				padding:5px; 
+				color:#f2f0f5;
+				overflow: scroll;
+			}
+			h2{
+				color:#d4c9e7;
+				text-align:center;
+			}
+			h3{
+				color:#d4c9e7;
+				padding-left:5px;
+			}
+			.source_content{
+				background-color:#333333;
+				padding:2px;
+				margin:10px;
+				text-align:left;
+				line-height: 170%;
+			}
+
+		</style>
+
+		
+	    <!-- uses a css file for universal page setings for this website -->	
+	    <link rel="stylesheet" href="style.css"/>
+
+	</head>
+
+	<body onload="initialise()">
+		<header>
+			<h1 id="main">Suicide Mortality in 2019's England</h1>
+	    </header>
+
+	    <!-- left side page -->
+		 <div id="source">
+		 	<h2>Introduction</h2>
+		 	<h3>Project Goals & Findings:</h3>
+
+		 	<!-- introduction of the map -->
+		 	<div class="source_content" style="line-height: 150%">
+		 		<p>
+		 			This website shows the geospatial distribution of suicides in England by local authority (2019). Overall, coastal areas present higher suicides and rates than inland districts. This finding echoes with previous studies that have identified the widening gap between coastal towns and the rest of England in terms of earnings, employment and education <a href="https://www.ons.gov.uk/businessindustryandtrade/tourismindustry/articles/coastaltownsinenglandandwales/2020-10-06/pdf">[1]</a><a href="https://www.smf.co.uk/wp-content/uploads/2017/09/Living-on-the-edge.pdf">[2]</a><a href="https://www.smf.co.uk/wp-content/uploads/2019/08/Falling-off-a-cliff-1.pdf">[3]</a>.  Such a distribution pattern of suicides therefore indicates the existence of mental health inequality across England, and calls for more effective suicide interventions and preventions for coastal districts.
+		 			<br/>
+		 		</p>
+		 		<p>
+		 			Compared with 2018 dataset, whereas the changing data does not present apparent geospatial pattern, it is clear that most districts experienced an increase from 2018 to 2019, which urges local authorities to pay more attention to suicide prevention. Such is our prime aim here.
+		 			<br/>
+		 		</p>
+		 		<p>
+		 			It could also contribute to the understandings on the relation between suicides and personal wellbeings. Whereas life satisfaction, happiness and sense of worthwhile are found to be negatively associated with suicide numbers <a href="https://ajp.psychiatryonline.org/doi/full/10.1176/appi.ajp.158.3.433">[1]</a>, their influence to suicide rates is less obvious, which echos with some researches <a href="https://www.nber.org/system/files/working_papers/w21279/w21279.pdf">[2]</a><a href="https://www.nber.org/papers/w10896">[3]</a>, calling for more studies on causes of suicide risks <a href="https://read.dukeupress.edu/demography/article/50/2/591/169682/Factors-Associated-With-Temporal-and-Spatial">[4]</a>.
+		 		</p>
+		 	</div>
+
+		 	<!-- data sources -->
+		 	<h3>Data Source: Office for National Statistics (ONS)</h3>
+		 	<div class="source_content" style="line-height: 80%">
+		 		<p>
+		 			<a href="https://geoportal.statistics.gov.uk/datasets/local-authority-districts-december-2020-uk-buc?geometry=-11.423%2C54.152%2C115.140%2C68.586">Boundary Data</a>: Local Authority Districts UK BUC, 12/2020.
+		 		</p>
+		 		<p>
+		 			<a href="https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/datasets/suicidesbylocalauthority"> Suicides by local authority</a>: Suicides in England and Wales: 2019 registrations, 09/2020.
+		 		</p>
+		 		<p>
+		 			<a href="https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/adhocs/126332019midyearpopulationestimatesbylau">Mid-year population dataset</a>: 2019 mid-year population estimates by local administrative units, 12/2020.
+		 		</p>
+		 		<p>
+		 			<a href="https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/datasets/headlineestimatesofpersonalwellbeing">Well-being Dataset</a>: Estimates of personal well-being from 2018-2019 Population Survey (APS), 10/2019. 
+		 		</p>
+		 	</div>
+		 </div>
+
+		<!-- right side bar -->
+        <div id="right">
+			<section>
+			    <div class="container">
+	            <!-- navigation bar -->
+					<div class='navmenu'>
+						<!-- navigation menu -->
+					    <span id='menu'><img src="https://img.icons8.com/material-outlined/32/ffffff/navigation.png" alt="navigation icon"/></span>
+					    <nav id='navbar'>
+						    <ul class='navbar'>
+					            <!-- return to homepage, which contains the map -->
+						        <li><a href='map_England_suicide.php'>Home</a></li>
+						        <!-- introduction to this site, including datasource,
+						             design purpose, contact information, etc.  -->
+						        <li><a href='map_source.html'>Introduction</a></li>
+						        <!-- term of using this map -->
+						        <li><a href='map_use.html'>Term of Use</a></li>
+						        <!-- a simple search box and the search result both in text and map-->
+							    <li><a href='map_search.php'>Search</a></li>
+						    </ul>
+					    </nav>
+					</div>
+					<div style='clear: both;'>
+					</div>
+				</div>
+		    </section>
+		    
+		    <!-- contacts and help information -->
+		    <h3>You are not alone!</h3>
+		    <p>If you are struggling to cope with distress, please call Samaritans Helpline free on 116-124 or visit <a href="https://www.samaritans.org">samaritans.org</a> for more supports. Samaritan provides 24/7 and confidential services for anyone struggling to cope, whoever they are, however they feel, whatever life has done to them.</p>
+		    <h3>We encourage feedback!</h3>
+		    <p>We welcome any comment or suggestion. If you find anything our website could improve, please email uczcjyu@ucl.ac.uk</p>
+		</div>
+		<!-- end of the right side bar -->
+
+
+
+        <!-- footer of the page -->
+        <footer>Data sets provided by <a href="https://www.ons.gov.uk/">Office for National Statistics licensed under the Open Government Licence v.3.0</a>; navigation icon by <a href="https://icons8.com/icon/113343/navigation">Icons8</a>; map implemented by the <a href="https://www.leafletjs.com/">Leaflet Library</a> </footer>
+        
+
+		<!-- JS code for the pull-down menu -->
+		<script>
+		    document.getElementById('menu').addEventListener('click', function () {
+		        var nav = document.getElementsByTagName('nav')[0];
+		        if (nav.style.display == 'block') {
+		            nav.style.display = 'none';
+		        } else {
+		            nav.style.display = 'block';
+		        }
+		    }, false);
+				    
+		</script>
+	</body>
+</html>
